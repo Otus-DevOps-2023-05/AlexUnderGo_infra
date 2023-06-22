@@ -1,2 +1,28 @@
 # AlexUnderGo_infra
 AlexUnderGo Infra repository
+
+#Самостоятельное задание
+Исследовать способ подключения к someinternalhost в одну
+команду из вашего рабочего устройства, проверить работоспособность
+найденного решения -
+#IP addres bastion&someinternalhost на момент написания
+ssh -i ~/.ssh/id_rsa_yandex -J 158.160.33.197 alex@10.128.0.15
+
+#Дополнительное задание:
+Предложить вариант решения для подключения из консоли при помощи
+команды вида ssh someinternalhost из локальной консоли рабочего
+устройства, чтобы подключение выполнялось по алиасу
+someinternalhost -
+Создать на локальном компьютере и настроить свой ~/.ssh/config следующего содержания:
+
+Host bastion
+HostName 158.160.33.197
+#Путь к закрытому ключу, с которым подключаемся на удаленную машину
+IdentityFile ~/.ssh/id_rsa_yandex
+User alex
+Host someinternalhost
+HostName 10.128.0.15
+User alex
+ProxyCommand ssh -W %h:%p bastion
+
+После этого, можно подключаться строкой вида - ssh someinternalhost/ssh bastion
