@@ -16,7 +16,7 @@ someinternalhost -
 Создать на локальном компьютере и настроить свой ~/.ssh/config следующего содержания:
 
 Host bastion
-HostName 158.160.33.197
+HostName 51.250.93.42
 #Путь к закрытому ключу, с которым подключаемся на удаленную машину
 IdentityFile ~/.ssh/id_rsa_yandex
 User alex
@@ -26,3 +26,8 @@ User alex
 ProxyCommand ssh -W %h:%p bastion
 
 После этого, можно подключаться строкой вида - ssh someinternalhost/ssh bastion
+
+#Установка pritunl
+Установлен скриптом setupvpn.sh (переделаный под ubuntu 22.04).
+bastion_IP = 51.250.93.42
+someinternalhost_IP = 10.128.0.15
