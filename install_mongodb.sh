@@ -1,4 +1,3 @@
-cat <<EOF> install_mongodb.sh
 #!/bin/bash
 sudo apt update && sudo apt upgrade
 wget -qO - https://www.mongodb.org/static/pgp/server-4.2.asc | sudo apt-key add -
@@ -8,4 +7,3 @@ sudo apt-get install -y mongodb-org
 sudo systemctl start mongod
 sudo systemctl enable mongod
 #sudo systemctl status mongod
-EOF

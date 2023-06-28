@@ -1,4 +1,3 @@
-cat <<EOF> deploy.sh
 #!/bin/bash
 sudo apt update && sudo apt upgrade
 sudo apt install -y git
@@ -8,4 +7,3 @@ sudo gem install -y bundler
 puma -d
 #ps aux | grep puma
 #Check wrok external_ip:port
-EOF
