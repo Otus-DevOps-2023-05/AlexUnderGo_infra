@@ -1,0 +1,8 @@
+{
+"folder_id": "12345",
+"source_image": "linux",
+"service_account_key_file": "/example/key.json",
+"ssh_username": "Chegevara",
+"platform_id": "example10",
+"image_description": "example-test"
+}
