@@ -5,8 +5,8 @@ image_id="fd891msjtpc79uv0asfo"
 
 #Создание виртуальной машины на Yandex-Cloud
 yc compute instance create \
-  --name reddit-app \
-  --hostname reddit-app \
+  --name reddit-pack \
+  --hostname reddit-pac \
   --memory=4 \
   --create-boot-disk image-id="$image_id" \
   --network-interface subnet-name=default-ru-central1-a,nat-ip-version=ipv4 \
