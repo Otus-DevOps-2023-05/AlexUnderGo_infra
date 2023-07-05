@@ -1,7 +1,7 @@
 {
 "folder_id": "123456",
 "source_image": "848586878889",
-"service_account_key_file": "ex_key.json",
+"service_account_key_file": "files/ex_key.json",
 "ssh_username": "user",
 "platform_id": "id1",
 "image_description": "example"
