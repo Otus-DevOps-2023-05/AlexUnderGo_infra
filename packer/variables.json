@@ -1,0 +1,8 @@
+{
+"folder_id": "b1g0r75ip1iq2fu4uham",
+"source_image": "ubuntu-1604-lts",
+"service_account_key_file": "/home/alex/yandex-cloud/key.json",
+"ssh_username": "ubuntu",
+"platform_id": "standard-v1",
+"image_description": "packer-test"
+}
